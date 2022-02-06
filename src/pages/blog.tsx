@@ -1,23 +1,40 @@
 import * as React from "react";
 import { graphql } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "../components/Layout";
 
 const BlogPage = ({ data }) => {
   console.log(data);
   return (
     <Layout pageTitle="My Blog Posts">
-      {data.allFile.nodes.map((file, index) => (
-        <p key={index}>{file.name}</p>
-      ))}
+      {data.allMdx.nodes.map(
+        ({ parent, frontmatter: { title, date }, body, id }) => (
+          <article key={id}>
+            <h2>{title}</h2>
+            <p>Posted: {date}</p>
+            <MDXRenderer>{body}</MDXRenderer>
+          </article>
+        )
+      )}
     </Layout>
   );
 };
 
 export const query = graphql`
   query {
-    allFile {
+    allMdx(sort: { order: DESC, fields: frontmatter___date }) {
       nodes {
-        name
+        parent {
+          ... on File {
+            modifiedTime(formatString: "MMMM D, YYYY")
+          }
+        }
+        frontmatter {
+          date(formatString: "MMMM D, YYYY")
+          title
+        }
+        body
+        id
       }
     }
   }
