@@ -18,5 +18,8 @@
     "gatsby": "^4.6.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "gatsby-plugin-dts-css-modules": "^2.2.0"
   }
 }
