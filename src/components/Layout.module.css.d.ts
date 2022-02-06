@@ -4,3 +4,4 @@ export const heading: string;
 export const navLinks: string;
 export const navLinkItem: string;
 export const navLinkText: string;
+export const siteTitle: string;
