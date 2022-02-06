@@ -14,6 +14,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-mdx`,
+    "gatsby-transformer-sharp",
     "gatsby-plugin-dts-css-modules",
   ],
 };
