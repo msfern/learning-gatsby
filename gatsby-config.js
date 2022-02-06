@@ -3,5 +3,9 @@ module.exports = {
     title: `Learning Gatsby`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-dts-css-modules"],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-dts-css-modules",
+  ],
 };
