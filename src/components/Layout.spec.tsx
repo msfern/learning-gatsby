@@ -5,8 +5,7 @@ import * as Gatsby from "../../__mocks__/gatsby";
 
 describe("Layout", () => {
   it("renders correctly", () => {
-    const useStaticQuery = jest.spyOn(Gatsby, "useStaticQuery");
-    const data = useStaticQuery.mockImplementation(() => ({
+    const data = Gatsby.useStaticQuery.mockImplementation(() => ({
       site: {
         siteMetadata: {
           title: "My Title",
