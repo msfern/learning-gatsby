@@ -9,23 +9,14 @@ import {
   siteTitle,
 } from "./Layout.module.css";
 
-const Layout = ({ pageTitle, children }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
+export const PureLayout = ({ pageTitle, data, children }) => {
   return (
-    <div className={container}>
+    <div className={container} data-testid="hero-title">
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
       <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+      <p>{data.site.siteMetadata.author}</p>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -51,6 +42,21 @@ const Layout = ({ pageTitle, children }) => {
       </main>
     </div>
   );
+};
+
+const Layout = (props) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          author
+        }
+      }
+    }
+  `);
+
+  return <PureLayout {...props} data={data} />;
 };
 
 export default Layout;

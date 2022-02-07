@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+<div
+  className="container"
+  data-testid="hero-title"
+>
+  <title>
+    Layout Test
+     | 
+    My Title
+  </title>
+  <header
+    className="siteTitle"
+  >
+    My Title
+  </header>
+  <p />
+  <nav>
+    <ul
+      className="navLinks"
+    >
+      <li
+        className="navLinkItem"
+      >
+        <a
+          className="navLinkText"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="navLinkItem"
+      >
+        <a
+          className="navLinkText"
+          href="/about"
+        >
+          About
+        </a>
+      </li>
+      <li
+        className="navLinkItem"
+      >
+        <a
+          className="navLinkText"
+          href="/blog"
+        >
+          Blog
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <h1
+      className="heading"
+    >
+      Layout Test
+    </h1>
+    Children
+  </main>
+</div>
+`;
