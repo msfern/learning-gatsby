@@ -16,7 +16,6 @@ export const PureLayout = ({ pageTitle, data, children }) => {
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
       <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-      <p>{data.site.siteMetadata.author}</p>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -50,7 +49,6 @@ const Layout = (props) => {
       site {
         siteMetadata {
           title
-          author
         }
       }
     }

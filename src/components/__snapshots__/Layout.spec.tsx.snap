@@ -15,7 +15,6 @@ exports[`Layout renders correctly 1`] = `
   >
     My Title
   </header>
-  <p />
   <nav>
     <ul
       className="navLinks"
