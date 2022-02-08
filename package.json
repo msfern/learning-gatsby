@@ -13,8 +13,10 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "jest --watch",
+    "test:unit": "jest --passWithNoTests",
+    "test:unit:coverage": "npm run test:unit -- --coverage",
+    "test:unit:watch": "npm run test:unit -- --watch"
   },
   "dependencies": {
     "@mdx-js/mdx": "v1",
@@ -39,6 +41,6 @@
     "gatsby-plugin-dts-css-modules": "^2.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.0",
-    "react-test-renderer": "17.0.1"
+    "react-test-renderer": "^17.0.1"
   }
 }

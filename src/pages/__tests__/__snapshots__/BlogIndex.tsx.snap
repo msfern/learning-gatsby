@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog renders correctly 1`] = `
+<div
+  className="container"
+  data-testid="hero-title"
+>
+  <title>
+    My Blog Posts
+     | 
+    My Title
+  </title>
+  <header
+    className="siteTitle"
+  >
+    My Title
+  </header>
+  <nav>
+    <ul
+      className="navLinks"
+    >
+      <li
+        className="navLinkItem"
+      >
+        <a
+          className="navLinkText"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="navLinkItem"
+      >
+        <a
+          className="navLinkText"
+          href="/about"
+        >
+          About
+        </a>
+      </li>
+      <li
+        className="navLinkItem"
+      >
+        <a
+          className="navLinkText"
+          href="/blog"
+        >
+          Blog
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <h1
+      className="heading"
+    >
+      My Blog Posts
+    </h1>
+    <article>
+      <h2>
+        <a
+          href="/blog/job-abroad/"
+        >
+          My first job abroad!
+        </a>
+      </h2>
+      <p>
+        Posted: 
+        February 1, 2022
+      </p>
+    </article>
+    <article>
+      <h2>
+        <a
+          href="/blog/mental-health/"
+        >
+          Mental Health
+        </a>
+      </h2>
+      <p>
+        Posted: 
+        December 25, 2021
+      </p>
+    </article>
+    <article>
+      <h2>
+        <a
+          href="/blog/my-guinea-pigs/"
+        >
+          My Guinea Pigs
+        </a>
+      </h2>
+      <p>
+        Posted: 
+        October 24, 2021
+      </p>
+    </article>
+  </main>
+</div>
+`;

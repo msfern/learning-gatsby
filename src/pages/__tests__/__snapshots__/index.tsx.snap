@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index renders correctly 1`] = `
+<div
+  className="container"
+  data-testid="hero-title"
+>
+  <title>
+    Home Page
+     | 
+    My Title
+  </title>
+  <header
+    className="siteTitle"
+  >
+    My Title
+  </header>
+  <nav>
+    <ul
+      className="navLinks"
+    >
+      <li
+        className="navLinkItem"
+      >
+        <a
+          className="navLinkText"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="navLinkItem"
+      >
+        <a
+          className="navLinkText"
+          href="/about"
+        >
+          About
+        </a>
+      </li>
+      <li
+        className="navLinkItem"
+      >
+        <a
+          className="navLinkText"
+          href="/blog"
+        >
+          Blog
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <h1
+      className="heading"
+    >
+      Home Page
+    </h1>
+    <p>
+      I'm making this by following the Gatsby Tutorial.
+    </p>
+  </main>
+</div>
+`;
