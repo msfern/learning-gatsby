@@ -13,10 +13,10 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest --watch",
+    "test": "jest",
     "test:unit": "jest --passWithNoTests",
-    "test:unit:coverage": "npm run test:unit -- --coverage",
-    "test:unit:watch": "npm run test:unit -- --watch"
+    "test:unit:coverage": "yarn test:unit -- --coverage",
+    "test:unit:watch": "yarn test:unit -- --watch"
   },
   "dependencies": {
     "@mdx-js/mdx": "v1",
